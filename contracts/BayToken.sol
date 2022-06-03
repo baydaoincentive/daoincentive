@@ -6,7 +6,7 @@ import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
 contract BayToken is ERC20, Ownable {
    uint public INITIAL_SUPPLY = 10**(18+8);
 
-   constructor() ERC20("BAY Token - test", "BAYT-t"){
+   constructor() ERC20("BAY Token", "BAYT"){
       _mint(msg.sender, INITIAL_SUPPLY);
    }
 }
