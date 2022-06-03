@@ -30,7 +30,7 @@ contract BayStudentDao is BayToken {
     function participate_lesson(uint _lesson_id) public {
         require(_lesson_id < lesson_id, "Invalid lesson id");
         require(lessons[_lesson_id].status == true, "The lesson is closed");
-        require(balanceOf(msg.sender) > lessons[_lesson_id].entry_fee, "Not enough balance to pay the entry fee");
+        require(balanceOf(msg.sender) >= lessons[_lesson_id].entry_fee, "Not enough balance to pay the entry fee");
         for (uint i; i < lessons[_lesson_id].participants.length; i++) {
             if (lessons[_lesson_id].participants[i] == msg.sender) {
             revert("Already participated the lesson"); 
@@ -53,7 +53,8 @@ contract BayStudentDao is BayToken {
         
         for (uint i; i < lessons[_lesson_id].participants.length; i++) {
             if (lessons[_lesson_id].participants[i] == msg.sender && lessons[_lesson_id].votes[i] == INIT_VOTE_SCORE) {
-            lessons[_lesson_id].votes[i] = _score;
+                lessons[_lesson_id].votes[i] = _score;
+                return;
             }
         }
         revert("You don't have the right to vote / or you already voted");

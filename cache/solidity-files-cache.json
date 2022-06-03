@@ -2,11 +2,11 @@
   "_format": "hh-sol-cache-2",
   "files": {
     "/Users/ho/bay/contracts/BayStudentDao.sol": {
-      "lastModificationDate": 1654240928272,
-      "contentHash": "c6e4a1b1093c57b4fe75ee669f3b24d7",
+      "lastModificationDate": 1654254403669,
+      "contentHash": "9e5546e6ebe6be1be2283e2ff1c0bf94",
       "sourceName": "contracts/BayStudentDao.sol",
       "solcConfig": {
-        "version": "0.8.0",
+        "version": "0.8.3",
         "settings": {
           "optimizer": {
             "enabled": false,
@@ -43,7 +43,7 @@
       "contentHash": "a9d2146925da52142435d3bb8df53c3c",
       "sourceName": "@openzeppelin/contracts/token/ERC20/ERC20.sol",
       "solcConfig": {
-        "version": "0.8.0",
+        "version": "0.8.3",
         "settings": {
           "optimizer": {
             "enabled": false,
@@ -82,7 +82,7 @@
       "contentHash": "ad7c2d0af148c8f9f097d65deeb4da6b",
       "sourceName": "@openzeppelin/contracts/token/ERC20/IERC20.sol",
       "solcConfig": {
-        "version": "0.8.0",
+        "version": "0.8.3",
         "settings": {
           "optimizer": {
             "enabled": false,
@@ -117,7 +117,7 @@
       "contentHash": "909ab67fc5c25033fe6cd364f8c056f9",
       "sourceName": "@openzeppelin/contracts/token/ERC20/extensions/IERC20Metadata.sol",
       "solcConfig": {
-        "version": "0.8.0",
+        "version": "0.8.3",
         "settings": {
           "optimizer": {
             "enabled": false,
@@ -154,7 +154,7 @@
       "contentHash": "5f2c5c4b6af2dd4551027144797bc8be",
       "sourceName": "@openzeppelin/contracts/utils/Context.sol",
       "solcConfig": {
-        "version": "0.8.0",
+        "version": "0.8.3",
         "settings": {
           "optimizer": {
             "enabled": false,
@@ -189,7 +189,7 @@
       "contentHash": "8398972af73b4e9e5ff3b31cad86234f",
       "sourceName": "@openzeppelin/contracts/access/Ownable.sol",
       "solcConfig": {
-        "version": "0.8.0",
+        "version": "0.8.3",
         "settings": {
           "optimizer": {
             "enabled": false,
@@ -222,11 +222,11 @@
       ]
     },
     "/Users/ho/bay/contracts/BayToken.sol": {
-      "lastModificationDate": 1654241270674,
-      "contentHash": "1640f64745ec8d6a24122db3ff838a59",
+      "lastModificationDate": 1654254379185,
+      "contentHash": "df97ef42cb81cde4eb712b2a00056353",
       "sourceName": "contracts/BayToken.sol",
       "solcConfig": {
-        "version": "0.8.0",
+        "version": "0.8.3",
         "settings": {
           "optimizer": {
             "enabled": false,

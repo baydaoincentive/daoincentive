@@ -29,25 +29,28 @@ async function give_balance(address) {
 
 async function create_lesson(tutor_address) {
     console.log("Updating the message...");
-    const tx = await BayStudentDaoContract.create_lesson(tutor_address,10**6);
+    const tx = await BayStudentDaoContract.create_lesson(tutor_address,10**8);
     await tx.wait();
 }
 
 async function main() {
-    await give_balance("0x94d97B33cc29F3DfE83B683cDf63F237Ca68Fc5F");
+    // await give_balance("0x94d97B33cc29F3DfE83B683cDf63F237Ca68Fc5F");
 
-    // await create_lesson("0xbC5Ac6b6F858a72aC11BeC18a657a597ce595367")
+    // await create_lesson("0x94d97B33cc29F3DfE83B683cDf63F237Ca68Fc5F")
 
     // const lesson = await BayStudentDaoContract.lessons(1);
-    // console.log("The lesson is: ",lesson.votes[0]); 
+    // console.log("The lesson is: ",lesson); 
 
     // const tx = await BayStudentDaoContract.participate_lesson(1);
     // await tx.wait();
 
-    // console.log("Updating the message...");
+    // const tx = await BayStudentDaoContract.close_lesson(1);
+    // await tx.wait();
+
     // const tx = await BayStudentDaoContract.vote_lesson(1,10);
     // await tx.wait(); 
-    
+    const tx = await BayStudentDaoContract.distribute_incentives(1);
+    await tx.wait(); 
 }
 
 main();
